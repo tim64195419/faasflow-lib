@@ -47,6 +47,13 @@ var (
 	Execution = InvokeEdge()
 )
 
+// change
+func GetContext() *sdk.Context {
+	return *sdk.Context
+}
+
+// chage
+
 // reset reset the Options
 func (o *Options) reset() {
 	o.header = map[string]string{}
