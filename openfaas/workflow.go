@@ -48,7 +48,7 @@ var (
 )
 
 // change
-func GetContext() *sdk.Context {
+func (c *Context) GetContext() *sdk.Context {
 	return *sdk.Context
 }
 
