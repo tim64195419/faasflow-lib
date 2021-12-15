@@ -1,4 +1,4 @@
-module github.com/faasflow/lib
+module github.com/tim64195419/faasflow-lib
 
 go 1.13
 
