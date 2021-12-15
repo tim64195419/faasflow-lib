@@ -5,7 +5,9 @@ import (
 	sdk "github.com/faasflow/sdk"
 )
 
-type Context sdk.Context
+type Context struct {
+	context *sdk.Context
+}
 type StateStore sdk.StateStore
 type DataStore sdk.DataStore
 
@@ -49,7 +51,7 @@ var (
 
 // change
 func (c *Context) GetContext() *sdk.Context {
-	return *sdk.Context
+	return c.context
 }
 
 // chage
